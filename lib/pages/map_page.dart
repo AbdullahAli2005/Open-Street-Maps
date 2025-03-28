@@ -34,7 +34,7 @@ class _FreeMapScreenState extends State<FreeMapScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.delete),
-            onPressed: _clearAllMarkers, // Clear all markers
+            onPressed: _clearAllMarkers, 
           ),
         ],
       ),
@@ -91,7 +91,6 @@ class _FreeMapScreenState extends State<FreeMapScreen> {
     );
   }
 
-  // Function to Search for a Location
   Future<void> _searchLocation() async {
     String query = _searchController.text.trim();
     if (query.isEmpty) return;
@@ -129,7 +128,6 @@ class _FreeMapScreenState extends State<FreeMapScreen> {
     }
   }
 
-  // Set Start & End Points for Route
   void _setRouteMarkers(LatLng point) {
     setState(() {
       if (startPoint == null) {
